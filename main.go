@@ -21,6 +21,6 @@ func main() {
 	dataList = append(dataList, "Node 8")
 	dataList = append(dataList, "Node 9")
 
-	mtree := merkle.New(dataList)
+	mtree := merkle.New(dataList, "sha256")
 	fmt.Println(mtree.GetRootHash())
 }
